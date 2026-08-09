@@ -1,4 +1,4 @@
-from app_agotamiento_balcarce import run
+from app_pronostico_multisitio import run
 
 
 if __name__ == "__main__":
