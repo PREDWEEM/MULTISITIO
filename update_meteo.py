@@ -14,6 +14,7 @@ from typing import Any
 import pandas as pd
 
 import update_meteo_core as core
+from forecast_horizon import ensure_all_sites
 
 CANONICAL_ZAVALLA_OUTPUT = Path("data/meteo_sitios/zavalla.csv")
 
@@ -126,6 +127,7 @@ install_runtime_corrections()
 
 def main() -> None:
     core.main()
+    ensure_all_sites(core.STATE)
     _normalize_multisite_state()
 
 
