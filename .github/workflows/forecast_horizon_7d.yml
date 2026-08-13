@@ -5,6 +5,13 @@ on:
   schedule:
     # Todos los días a las 09:00 de Argentina (12:00 UTC), después de la copia multisitio.
     - cron: "0 12 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "forecast_horizon.py"
+      - "tests/test_forecast_horizon.py"
+      - ".github/workflows/forecast_horizon_7d.yml"
 
 permissions:
   contents: write
