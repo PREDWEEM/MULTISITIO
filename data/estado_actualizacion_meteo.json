@@ -1,5 +1,5 @@
 {
-  "actualizado_en": "2026-08-16T07:47:55-03:00",
+  "actualizado_en": "2026-08-17T07:56:09-03:00",
   "modo": "HIBRIDO_ZAVALLA_Y_COPIA_EXACTA_MULTISITIO",
   "descripcion": "Zavalla prioriza SMN Rosario Aero, completa con NOAA NCEI GSOD y utiliza Open-Meteo ECMWF IFS para faltantes y pronóstico. Los demás sitios conservan copia exacta de sus repositorios.",
   "sitios": {
@@ -9,19 +9,9 @@
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_AZUL2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_AZUL2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/azul.csv",
-      "bytes": 17725,
-      "sha256": "66f733bf657b31cbb104cb2cc55d75a401447a9af0e7416f2e7c1007f92738f2",
-      "copia_exacta": true,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [],
-      "relleno_ecmwf_aplicado": false,
-      "fuente_relleno": null,
-      "sha256_origen": "66f733bf657b31cbb104cb2cc55d75a401447a9af0e7416f2e7c1007f92738f2",
-      "sha256_final": "66f733bf657b31cbb104cb2cc55d75a401447a9af0e7416f2e7c1007f92738f2"
+      "bytes": 17800,
+      "sha256": "f8e28bd3e14bea7e5385f1c1786e7dad5bded5702cd6798af22498cfc4434ef3",
+      "copia_exacta": true
     },
     "balcarce": {
       "modo": "copia_exacta",
@@ -29,41 +19,19 @@
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_BAL2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_BAL2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/balcarce.csv",
-      "bytes": 35143,
-      "sha256": "b72868f8cdddb8b81f0f05ad674a42abee24a49429b817d10fd1bd52bbe217d5",
-      "copia_exacta": true,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [],
-      "relleno_ecmwf_aplicado": false,
-      "fuente_relleno": null,
-      "sha256_origen": "b72868f8cdddb8b81f0f05ad674a42abee24a49429b817d10fd1bd52bbe217d5",
-      "sha256_final": "b72868f8cdddb8b81f0f05ad674a42abee24a49429b817d10fd1bd52bbe217d5"
+      "bytes": 35340,
+      "sha256": "0359ea5d55e2bae4ce89ccce4e1ce0dc4d72b4ce77046110626efa694530a999",
+      "copia_exacta": true
     },
     "bordenave": {
-      "modo": "copia_origen_mas_relleno_ecmwf_7d",
+      "modo": "copia_exacta",
       "repositorio": "PREDWEEM/LOLIUM_BOR2026",
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_BOR2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_BOR2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/bordenave.csv",
-      "bytes": 33609,
-      "sha256": "8c015b8895f2cd2064c8c34949b0dc7c1b7e78fdd248166bbe900ef4d6be7357",
-      "copia_exacta": false,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [
-        "2026-08-22"
-      ],
-      "relleno_ecmwf_aplicado": true,
-      "fuente_relleno": "MULTISITIO_OPEN_METEO_ECMWF_IFS_FORECAST_FILL",
-      "sha256_origen": "bb11ef41ebf5c0e4e1693bbe19ca0ca805fcdf244bcfde72af281ce232f0b1d8",
-      "sha256_final": "8c015b8895f2cd2064c8c34949b0dc7c1b7e78fdd248166bbe900ef4d6be7357"
+      "bytes": 35414,
+      "sha256": "bc83c1dbec19188c2b45fa6e208d5ecd391cc163201abd478a102e02efa48edd",
+      "copia_exacta": true
     },
     "lartigau": {
       "modo": "copia_exacta",
@@ -71,19 +39,9 @@
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_LARTIGAU-2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_LARTIGAU-2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/lartigau.csv",
-      "bytes": 38416,
-      "sha256": "5e474424c08e491064faaff8124b2260a96e197e25634082a637fcf48bb34bcf",
-      "copia_exacta": true,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [],
-      "relleno_ecmwf_aplicado": false,
-      "fuente_relleno": null,
-      "sha256_origen": "5e474424c08e491064faaff8124b2260a96e197e25634082a637fcf48bb34bcf",
-      "sha256_final": "5e474424c08e491064faaff8124b2260a96e197e25634082a637fcf48bb34bcf"
+      "bytes": 38577,
+      "sha256": "68919732deb787325d7d1d878b6b172c0cea1c3f5e3ffb1affc22b2e85666eee",
+      "copia_exacta": true
     },
     "olavarria": {
       "modo": "copia_exacta",
@@ -91,93 +49,47 @@
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_OLAVA2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM_OLAVA2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/olavarria.csv",
-      "bytes": 17725,
-      "sha256": "0e21fecb961b077bc83fe8bbf39784c9df1997921af720831e4843df96f13d94",
-      "copia_exacta": true,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [],
-      "relleno_ecmwf_aplicado": false,
-      "fuente_relleno": null,
-      "sha256_origen": "0e21fecb961b077bc83fe8bbf39784c9df1997921af720831e4843df96f13d94",
-      "sha256_final": "0e21fecb961b077bc83fe8bbf39784c9df1997921af720831e4843df96f13d94"
+      "bytes": 17798,
+      "sha256": "93735ba7e2bc2ec56fa5ad4c154ce34669d5160b2948b9dd92903b2bfb43c721",
+      "copia_exacta": true
     },
     "pergamino": {
-      "modo": "copia_origen_mas_relleno_ecmwf_7d",
+      "modo": "copia_exacta",
       "repositorio": "PREDWEEM/LOLIUM-PERGA2026",
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM-PERGA2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/LOLIUM-PERGA2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/pergamino.csv",
-      "bytes": 33633,
-      "sha256": "624101f58f218ab1143d34f08217de67b7e7fba8bf16e3603fa57790fbb4e367",
-      "copia_exacta": false,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [
-        "2026-08-22"
-      ],
-      "relleno_ecmwf_aplicado": true,
-      "fuente_relleno": "MULTISITIO_OPEN_METEO_ECMWF_IFS_FORECAST_FILL",
-      "sha256_origen": "5d93904d4d15b51892bfc1c2a40a77206b5126ba4930f1670e900771fa4f05da",
-      "sha256_final": "624101f58f218ab1143d34f08217de67b7e7fba8bf16e3603fa57790fbb4e367"
+      "bytes": 35392,
+      "sha256": "6a6748acd8a6a7172c3f671435554d70c3ac6c96ae2875ae63a095ac9b236afe",
+      "copia_exacta": true
     },
     "san-pedro": {
-      "modo": "copia_origen_mas_relleno_ecmwf_7d",
+      "modo": "copia_exacta",
       "repositorio": "PREDWEEM/lolium_sanpedro2026",
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/lolium_sanpedro2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/lolium_sanpedro2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/san-pedro.csv",
-      "bytes": 35486,
-      "sha256": "b3796346db270a21206fdded636951f1734a5459239a4cc36a5f97f12e861680",
-      "copia_exacta": false,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [
-        "2026-08-22"
-      ],
-      "relleno_ecmwf_aplicado": true,
-      "fuente_relleno": "MULTISITIO_OPEN_METEO_ECMWF_IFS_FORECAST_FILL",
-      "sha256_origen": "dadebb23c1d73d60fd570e15595c83ced88d23a24f69f8008a3e240e49cefe3a",
-      "sha256_final": "b3796346db270a21206fdded636951f1734a5459239a4cc36a5f97f12e861680"
+      "bytes": 37260,
+      "sha256": "8a36a123232697d1e49bb21751b68771313e41d71f6dc1526f108de2afac15df",
+      "copia_exacta": true
     },
     "tres-arroyos": {
-      "modo": "copia_origen_mas_relleno_ecmwf_7d",
+      "modo": "copia_exacta",
       "repositorio": "PREDWEEM/loliumTA_2026",
       "url_origen": "https://raw.githubusercontent.com/PREDWEEM/loliumTA_2026/main/meteo_daily.csv",
       "url_solicitada": "https://raw.githubusercontent.com/PREDWEEM/loliumTA_2026/main/meteo_daily.csv",
       "archivo_destino": "data/meteo_sitios/tres-arroyos.csv",
-      "bytes": 34700,
-      "sha256": "29331a93e3ddbf08634e83e61273b7c0bf2690be7c0414d2b2f1be0659df70aa",
-      "copia_exacta": false,
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [
-        "2026-08-22"
-      ],
-      "relleno_ecmwf_aplicado": true,
-      "fuente_relleno": "MULTISITIO_OPEN_METEO_ECMWF_IFS_FORECAST_FILL",
-      "sha256_origen": "ab366ad8e18570c171162ff90ed796cc1e47f961326344db0e8a8ec304b87013",
-      "sha256_final": "29331a93e3ddbf08634e83e61273b7c0bf2690be7c0414d2b2f1be0659df70aa"
+      "bytes": 37237,
+      "sha256": "607b94c402ae2b95f455be5aa511df20a466374edaee5352a300fd1de2fde804",
+      "copia_exacta": true
     },
     "zavalla": {
       "modo": "hibrido_observado_pronosticado",
       "archivo_destino": "data/meteo_sitios/zavalla.csv",
-      "actualizado": "2026-08-16T07:46:57-03:00",
+      "actualizado": "2026-08-17T07:55:02-03:00",
       "inicio": "2026-01-01",
-      "fin": "2026-08-23",
-      "filas": 235,
+      "fin": "2026-08-24",
+      "filas": 236,
       "prioridad": [
         "SMN_WIS2_ROSARIO_AERO_87480",
         "NOAA_NCEI_GSOD_ROSARIO_AERO_87480",
@@ -198,7 +110,7 @@
           {
             "fuente": "OPEN_METEO_ECMWF_IFS_ARCHIVE_FALLBACK",
             "tipo": "Provisional",
-            "filas": 67
+            "filas": 68
           },
           {
             "fuente": "OPEN_METEO_ECMWF_IFS_FORECAST",
@@ -221,7 +133,7 @@
         {
           "fuente": "OPEN_METEO_ECMWF_IFS_ARCHIVE_FALLBACK",
           "tipo": "Provisional",
-          "filas": 67
+          "filas": 68
         },
         {
           "fuente": "OPEN_METEO_ECMWF_IFS_FORECAST",
@@ -239,22 +151,7 @@
           "filas": 132
         }
       ],
-      "archivo_canonico": "data/meteo_sitios/zavalla.csv",
-      "horizonte_validado": true,
-      "horizonte_minimo_dias": 7,
-      "horizonte_desde": "2026-08-16",
-      "horizonte_hasta": "2026-08-22",
-      "dias_disponibles_horizonte": 7,
-      "dias_agregados_multisitio": [],
-      "relleno_ecmwf_aplicado": false,
-      "fuente_relleno": null,
-      "sha256_origen": "7dcc3bce241c06e7103056f74496eb15422b97cfedcd0c64a5e8c37f8b65c3de",
-      "sha256_final": "7dcc3bce241c06e7103056f74496eb15422b97cfedcd0c64a5e8c37f8b65c3de"
+      "archivo_canonico": "data/meteo_sitios/zavalla.csv"
     }
-  },
-  "horizonte_pronostico": {
-    "politica": "7_fechas_consecutivas_desde_hoy_inclusive",
-    "dias": 7,
-    "relleno_seguridad": "MULTISITIO_OPEN_METEO_ECMWF_IFS_FORECAST_FILL"
   }
 }
