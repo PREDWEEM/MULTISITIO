@@ -111,7 +111,7 @@ def build_site_map(selected_site: SiteLike, sites: Iterable[SiteLike]) -> folium
     map_object = folium.Map(
         location=[center_lat, center_lon],
         zoom_start=6,
-        tiles="CartoDB positron",
+        tiles="OpenStreetMap",
         control_scale=True,
         zoom_control=True,
         prefer_canvas=True,
