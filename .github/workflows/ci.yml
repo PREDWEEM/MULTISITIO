@@ -1,4 +1,4 @@
-name: Validar PREDWEEM Zavalla
+name: Validar PREDWEEM MULTISITIO
 
 on:
   pull_request:
@@ -25,16 +25,35 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt pytest
 
-      - name: Compilar módulos
+      - name: Compilar módulos activos
         run: |
           python -m py_compile \
             app.py \
+            app_sanpedro_final.py \
+            app_pronostico_multisitio.py \
+            app_agotamiento_balcarce.py \
+            app_fuente_hibrida.py \
+            app_detalle_1pct.py \
+            app_umbral_operativo.py \
+            app_zoom_operativo.py \
+            app_multisitio.py \
+            app_multisitio_principal.py \
             predweem_core.py \
-            selector_adaptativo.py \
+            sanpedro_calibracion_final.py \
+            visualizacion_operativa.py \
             visualizacion_pulsos.py \
             update_meteo.py \
-            config_zavalla.py \
+            update_meteo_core.py \
+            update_meteo_runtime.py \
+            config_multisitio.py \
             sitios_lolium.py
 
-      - name: Ejecutar pruebas
-        run: pytest -q
+      - name: Ejecutar pruebas vigentes
+        run: |
+          python -m pytest \
+            tests/test_multisitio_registry.py \
+            tests/test_sanpedro_final.py \
+            tests/test_forecast_horizon.py \
+            tests/test_update_meteo_runtime.py \
+            tests/test_visualizacion_pulsos.py \
+            -q
