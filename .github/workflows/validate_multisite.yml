@@ -9,9 +9,12 @@ on:
       - "config_multisitio.py"
       - "sitios_lolium.py"
       - "predweem_core.py"
+      - "sanpedro_*.py"
+      - "sanpedro_*.json"
       - "visualizacion_*.py"
       - "mapa_sitios.py"
       - "tests/test_multisitio_registry.py"
+      - "tests/test_sanpedro_final.py"
       - ".github/workflows/validate_multisite.yml"
   pull_request:
     paths:
@@ -20,9 +23,12 @@ on:
       - "config_multisitio.py"
       - "sitios_lolium.py"
       - "predweem_core.py"
+      - "sanpedro_*.py"
+      - "sanpedro_*.json"
       - "visualizacion_*.py"
       - "mapa_sitios.py"
       - "tests/test_multisitio_registry.py"
+      - "tests/test_sanpedro_final.py"
 
 permissions:
   contents: read
@@ -41,13 +47,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Instalar pruebas
-        run: python -m pip install --disable-pip-version-check pytest
+      - name: Instalar dependencias y pruebas
+        run: |
+          python -m pip install --disable-pip-version-check -r requirements.txt
+          python -m pip install --disable-pip-version-check pytest
 
       - name: Validar sintaxis de la aplicación
         run: |
           python -m py_compile \
             app.py \
+            app_sanpedro_final.py \
             app_multisitio.py \
             app_multisitio_principal.py \
             app_fuente_hibrida.py \
@@ -57,9 +66,14 @@ jobs:
             config_multisitio.py \
             sitios_lolium.py \
             predweem_core.py \
+            sanpedro_calibracion_final.py \
             visualizacion_operativa.py \
             visualizacion_pulsos.py \
             mapa_sitios.py
 
-      - name: Verificar estructura depurada y nueve localidades
-        run: python -m pytest tests/test_multisitio_registry.py -q
+      - name: Verificar estructura y motor final de San Pedro
+        run: |
+          python -m pytest \
+            tests/test_multisitio_registry.py \
+            tests/test_sanpedro_final.py \
+            -q

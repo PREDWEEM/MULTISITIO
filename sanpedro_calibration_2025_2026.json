@@ -1,0 +1,20 @@
+{
+  "objective": 0.18086758481502616,
+  "params": {
+    "coverage_pct": 17.117654787448153,
+    "wmax_mm": 21.835296520312887,
+    "T0_C": 24.554776252844984,
+    "alpha_hydric_C": 0.05239929751806027,
+    "slope_C": 0.36599312676568485,
+    "k_cohort": 0.4302565796601996,
+    "thermal_window_days": 7
+  },
+  "fixed": {
+    "hydric_shock_3d_mm": 45.0,
+    "kr_exponent": 0.0,
+    "first_peak_threshold": 0.20
+  },
+  "calibration_campaigns": [2025, 2026],
+  "status": "frozen_final_san_pedro_2026",
+  "source_repository": "PREDWEEM/lolium_sanpedro2026"
+}

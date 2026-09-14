@@ -1,4 +1,4 @@
-from app_pronostico_multisitio import run
+from app_sanpedro_final import run
 
 
 if __name__ == "__main__":
