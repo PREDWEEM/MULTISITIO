@@ -1,4 +1,4 @@
-from app_sanpedro_final import run
+from app_escala_relativa import run
 
 
 if __name__ == "__main__":
