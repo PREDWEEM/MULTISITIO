@@ -15,6 +15,7 @@ on:
       - "mapa_sitios.py"
       - "tests/test_multisitio_registry.py"
       - "tests/test_sanpedro_final.py"
+      - "tests/test_escala_relativa.py"
       - ".github/workflows/validate_multisite.yml"
   pull_request:
     paths:
@@ -29,6 +30,7 @@ on:
       - "mapa_sitios.py"
       - "tests/test_multisitio_registry.py"
       - "tests/test_sanpedro_final.py"
+      - "tests/test_escala_relativa.py"
 
 permissions:
   contents: read
@@ -56,6 +58,7 @@ jobs:
         run: |
           python -m py_compile \
             app.py \
+            app_escala_relativa.py \
             app_sanpedro_final.py \
             app_multisitio.py \
             app_multisitio_principal.py \
@@ -71,9 +74,10 @@ jobs:
             visualizacion_pulsos.py \
             mapa_sitios.py
 
-      - name: Verificar estructura y motor final de San Pedro
+      - name: Verificar estructura, San Pedro y escala relativa
         run: |
           python -m pytest \
             tests/test_multisitio_registry.py \
             tests/test_sanpedro_final.py \
+            tests/test_escala_relativa.py \
             -q
