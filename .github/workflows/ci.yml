@@ -29,6 +29,7 @@ jobs:
         run: |
           python -m py_compile \
             app.py \
+            app_escala_relativa.py \
             app_sanpedro_final.py \
             app_pronostico_multisitio.py \
             app_agotamiento_balcarce.py \
@@ -53,6 +54,7 @@ jobs:
           python -m pytest \
             tests/test_multisitio_registry.py \
             tests/test_sanpedro_final.py \
+            tests/test_escala_relativa.py \
             tests/test_update_meteo_runtime.py \
             tests/test_visualizacion_pulsos.py \
             -q
